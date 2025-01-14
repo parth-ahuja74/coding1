@@ -1,3 +1,5 @@
+package stack
+
 import java.util.Stack
 
 fun main() {
@@ -5,7 +7,8 @@ fun main() {
 }
 
 fun findStockSpan(): List<Int> {
-    val a = listOf<Int>(100,80,60,70,60,75,85)
+   //val a = listOf<Int>(100,80,60,70,60,75,85)
+    val a = listOf<Int>(2,1,5,6,2,3)
     val stack = Stack<Pair<Int,Int>>()
     var result = mutableListOf<Int>()
     for(i in 0..a.size-1) {
